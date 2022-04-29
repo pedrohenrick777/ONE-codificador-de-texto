@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/reset.css">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <title>Decodificador de texto</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            <img src="static/imgs/logo.svg" alt="Alura">
-        </h1>
-
+    <div class="content">
+        <header>
+            <h1 class="logo">
+                <img src="static/imgs/logo.svg" alt="Logo da Alura">
+            </h1>
+        </header>
         <main>
-            <div>
-                <textarea name="text-encrypt" id="" cols="30" rows="10"></textarea>
-                <button id="criptografar">Criptografar</button>
-                <button id="descriptografar">Descriptografar</button>
-            </div>
-            <div>
-                <textarea name="resultado" id="" cols="30" rows="10"></textarea>
-                <button id="copiar">Copiar</button>
-                <img src="static/imgs/empty_message.svg" alt="Sem mensagens">
-            </div>
+            <section class="criptografar">
+                <form>
+                    <textarea name="text-encrypt" cols="40" rows="10" placeholder="Digite seu texto"
+                        autofocus></textarea>
+                    <div>
+                        <button type="submit" class="btn-primario">Criptografar</button>
+                        <button type="button" id="descriptografar">Descriptografar</button>
+                    </div>
+                </form>
+            </section>
+            <section class="caixa-resultado">
+                <div class="resultado">
+                    <img src="static/imgs/empty_message.svg" class="sem-mensagens" alt="Sem mensagens">
+                    <button id="copiar">Copiar</button>
+                </div>
+            </section>
         </main>
-    </header>
+        <footer>
+            <p>Pedro Henrick 2022</p>
+        </footer>
+    </div>
 </body>
 
 </html>
