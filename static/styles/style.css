@@ -44,6 +44,7 @@ textarea {
     color: #0A3871;
     outline: none;
     max-width: 100%;
+    padding: 0;
 }
 
 textarea::placeholder {
