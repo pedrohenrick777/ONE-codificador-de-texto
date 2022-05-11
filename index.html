@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="static/styles/reset.css">
     <link rel="stylesheet" href="static/styles/style.css">
+
+    <script src="static/js/index.js" defer></script>
     <title>Decodificador de texto</title>
 </head>
 
@@ -19,26 +22,33 @@
         </header>
         <main>
             <section class="criptografar">
-                <form>
-                    <textarea name="text-encrypt" cols="40" rows="10" placeholder="Digite seu texto"
-                        autofocus></textarea>
-                    <div>
-                        <button type="submit" class="btn-primario">Criptografar</button>
-                        <button type="button" id="descriptografar">Descriptografar</button>
-                    </div>
-                </form>
+                <textarea id="texto" cols="30" rows="10" placeholder="Digite seu texto" autofocus></textarea>
+                <p class="alert"><span>!</span>Apenas letras minúsculas e sem acento.</p>
+                <div class="buttons">
+                    <button type="button" id="criptografar" class="btn-primario">Criptografar</button>
+                    <button type="button" id="descriptografar">Descriptografar</button>
+                </div>
             </section>
             <section class="caixa-resultado">
                 <div class="resultado">
-                    <img src="static/imgs/empty_message.svg" class="sem-mensagens" alt="Sem mensagens">
-                    <button id="copiar">Copiar</button>
+                    <div class="sem-mensagem">
+                        <div>
+                            <img src="static/imgs/empty_message.svg" class="sem-mensagens" alt="Sem mensagens">
+                            <h2>Nenhuma mensagem encontrada</h2>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                    </div>
+                    <div class="mensagem-final display-none">
+                        <p class="mensagem"></p>
+                        <button id="copiar">Copiar</button>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <p>Pedro Henrick 2022</p>
-        </footer>
     </div>
+    <footer>
+        <p>Feito por pedrohenrick777 em 2022</p>
+    </footer>
 </body>
 
 </html>
