@@ -1,5 +1,5 @@
-const LETRAS = ['a', 'e', 'i', 'o', 'u'];
-const LETRAS_CRIPT = ['ai', 'enter', 'imes', 'ober', 'ufat'];
+const LETRAS = ['e', 'i', 'a', 'o', 'u'];
+const LETRAS_CRIPT = ['enter', 'imes', 'ai', 'ober', 'ufat'];
 const BT_CRIPTOGRAFAR = document.getElementById('criptografar');
 const BT_DESCRIPTOGRAFAR = document.getElementById('descriptografar');
 const BT_COPIAR = document.getElementById('copiar');
