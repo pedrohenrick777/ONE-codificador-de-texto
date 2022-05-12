@@ -7,10 +7,10 @@ Esse projeto me ajudou a consolidar meus conhecimentos em CSS3, visto que eu nã
 ## Imagens
 
 ![Tela](docs/imgs/pagina_inicial.jpeg)
+Tela inicial
 
 ![Tela 2](docs/imgs/pagina_inicial_2.jpeg)
 
-![Tela mobile](docs/imgs/pag_inicial_mobile.jpeg)
+## Badge do projeto
 
-![Tela mobile 2](docs/imgs/pag_inicial_mobile_2.jpeg)
-
+![badge](docs/imgs/badge_ONE_codificador.png)
