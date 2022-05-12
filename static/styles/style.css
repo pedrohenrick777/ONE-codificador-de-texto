@@ -15,7 +15,7 @@ body {
 
 .content {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .logo {
@@ -27,24 +27,6 @@ main {
     margin-left: 10rem;
     height: 100%;
     width: 100%;
-}
-
-.criptografar {
-    margin: 10rem 0 0 0;
-    width: 60%;
-}
-
-textarea {
-    margin: 0 auto;
-    border: none;
-    resize: none;
-    font-size: 3.2rem;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background);
-    color: #0A3871;
-    outline: none;
-    max-width: 100%;
-    padding: 0;
 }
 
 textarea::placeholder {
@@ -71,6 +53,25 @@ textarea::placeholder {
     color: white;
     font-size: inherit;
     background-color: var(--font-h2-color);
+}
+
+.criptografar {
+    margin: 10rem 0 0 0;
+    width: 60%;
+}
+
+.criptografar textarea {
+    margin: 0 auto;
+    border: none;
+    resize: none;
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: #0A3871;
+    outline: none;
+    max-width: 100%;
+    padding: 0;
+    height: 80%;
 }
 
 .buttons {
@@ -174,6 +175,13 @@ footer {
 
 .display-none {
     display: none !important;
+}
+
+@media screen and (max-height: 650px) {
+    .content {
+        height: auto;
+        min-height: 100vh;
+    }
 }
 
 @media screen and (max-width: 1000px) {
